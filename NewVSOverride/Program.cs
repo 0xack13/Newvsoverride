@@ -26,6 +26,8 @@ namespace NewVSOverride
     {
         static void Main(string[] args)
         {
+            //When using override:
+            //Both instances will be calling the derived method.
             Base b = new Derived();
             Derived d = new Derived();
             
