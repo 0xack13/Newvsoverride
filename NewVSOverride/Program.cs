@@ -28,7 +28,11 @@ namespace NewVSOverride
         {
             Base b = new Derived();
             Derived d = new Derived();
+            
+            //"Base was called!"
             b.SomeOtherMethod();
+
+            //"Derived was called!";
             d.SomeOtherMethod();
         }
     }
