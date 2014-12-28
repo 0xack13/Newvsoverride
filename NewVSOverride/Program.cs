@@ -26,7 +26,10 @@ namespace NewVSOverride
     {
         static void Main(string[] args)
         {
-
+            Base b = new Derived();
+            Derived d = new Derived();
+            b.SomeOtherMethod();
+            d.SomeOtherMethod();
         }
     }
 }
