@@ -16,6 +16,7 @@ namespace NewVSOverride
 
     public class Derived : Base
     {
+        //Using "new" modifier
         public new void SomeOtherMethod()
         {
             Console.WriteLine("Dervided was called!");
