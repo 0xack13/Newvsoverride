@@ -49,7 +49,7 @@ namespace NewVSOverride
             //"Derived was called!";
             d.SomeOtherMethod();
 
-            //"Base was called!"
+            //"Derived was called!";
             b.SomeMethod();
 
             //"Derived was called!";
