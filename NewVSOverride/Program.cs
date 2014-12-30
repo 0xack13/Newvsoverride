@@ -8,6 +8,11 @@ namespace NewVSOverride
 {
     public class Base
     {
+        public virtual void SomeMethod()
+        {
+            Console.WriteLine("Base was called!");
+        }
+
         public virtual void SomeOtherMethod()
         {
             Console.WriteLine("Base was called!");
@@ -18,6 +23,12 @@ namespace NewVSOverride
     {
         //Using "new" modifier
         public new void SomeOtherMethod()
+        {
+            Console.WriteLine("Dervided was called!");
+        }
+
+        //Using "override" modifier
+        public override void SomeMethod()
         {
             Console.WriteLine("Dervided was called!");
         }
@@ -37,6 +48,12 @@ namespace NewVSOverride
 
             //"Derived was called!";
             d.SomeOtherMethod();
+
+            //"Base was called!"
+            b.SomeMethod();
+
+            //"Derived was called!";
+            d.SomeMethod();
         }
     }
 }
